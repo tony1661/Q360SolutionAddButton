@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.5.1/css/bootstrap-datepicker3.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap-datetimepicker-master/build/css/bootstrap-datetimepicker.min.css">
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<a class="add icon-only" title="Add..." onclick="return add();"></a>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+
+<!-- <div class="container">
+    <div class="row">
+        <div class='col-sm-6'>
+            <div class="form-group">
+                <div class='input-group date' >
+                    <input type='text' class="form-control datepicker" />
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+
+
+
+<!-- Popup Box -->
+<div id="modal-box" class="modal-box" style="max-width: 100%; max-height: 80%; width: 100%; overflow: visible;">
+	<div class="modal-scroll">
+		<h3 class="modal-title" style="display: block;">Add Solution</h3>
+		<div class="modal-content">
+			<h3>New Solution Entry</h3>
+
+			<form>
+			  	<div class="form-group datetime">
+			    	<div class='input-group date timepicker'>
+	                    <input type='text' class="form-control timepicker" id="datetime"/>
+	                    <span class="input-group-addon">
+	                        <span class="glyphicon glyphicon-time"></span>
+	                    </span>
+	                </div>
+			  	</div>
+			  	<div class="form-group initials">
+			    	<label for="InputInitials">Initials</label>
+			    	<input type="text" class="form-control" placeholder="Initials" id="initials">
+			  	</div>
+			  	<div class="form-group location">
+			    	<label for="InputLocation">Location</label>
+			    	<select class="form-control" id="location">
+					  <option></option>
+					  <option>ON-SITE</option>
+					  <option>REMOTE</option>
+					</select>
+			    	<p class="help-block">Where were you when the call was completed.</p>
+			  	</div>
+			  	<div class="form-group notes">
+			    	<label for="InputLocation">Notes</label>
+			    	<textarea class="form-control" rows="2" id="notes"></textarea>
+		  		</div>
+			  	<div class="form-group parts">
+			    	<label for="InputLocation">Parts</label>
+			    	<textarea class="form-control" rows="2" id="parts"></textarea>
+			    	<p class="help-block">If no parts were used write 'none'</p>
+			  	</div>
+
+			  	<a id="submitsolution" class="btn btn-default" href="#" role="button">Submit</a>
+			</form>
+
+		</div>
+	</div>
+</div>
+
+
+
+<p class="input-item"><label for="solution">Solution</label><span class="input text"><textarea id="solution" name="solution" class="comments">Jan/8/2015 TF: Bruce will do this next week when Josi is away for the day.
+Jan/26/2015 TF : Still waiting on Josi to be free. Need a new PC for her</textarea></span></p>
+
+
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.5.1/js/bootstrap-datepicker.js"></script>
+<script type="text/javascript" src="moment-develop/min/moment.min.js"></script>
+<script type="text/javascript" src="bootstrap-datetimepicker-master/build/js/bootstrap-datetimepicker.min.js"></script>
+<script type="text/javascript" src="main.js"></script>
+
+
+</body>
+</html>
+

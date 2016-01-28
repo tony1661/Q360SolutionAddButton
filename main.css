@@ -1,0 +1,54 @@
+.modal-box {
+	display: none;
+    position: fixed;
+    z-index: 2;
+    background-color: #fff;
+    border-radius: 2px;
+    box-shadow: 0 1em 2em #000;
+    overflow: auto;
+}
+.modal-scroll {
+    height: 100%;
+}
+.modal-title {
+    color: #fff;
+    font-size: 1em;
+    font-weight: bold;
+    text-indent: 1em;
+    padding: 0.5em 0;
+    margin: 0;
+    background: #666;
+}
+.modal-box .modal-content {
+	font-family: 'Open Sans', sans-serif;
+    clear: both;
+    display: block;
+    max-width: none;
+    max-height: none;
+    Xheight: 100%;
+    width: auto;
+    padding: 1em;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.modal .modal-content {
+    width: 100%;
+    height: auto;
+    max-width: none;
+    max-height: none;
+}
+.add {
+    background-image: url('add.png');
+}
+a.icon-only, .icon-only {
+    display: inline-block;
+    min-width: 16px;
+    min-height: 16px;
+    padding: 0 !important;
+    background-position: center center;
+    vertical-align: middle;
+}
+a:not([href] ) {
+    cursor: pointer;
+}
